@@ -1,6 +1,6 @@
 # FCFun
 
-A sample project showing how you can use FCModel to create a simple OSX app.
+A sample project showing how you can use [FCModel](https://github.com/marcoarment/FCModel) to create a simple OSX app.
 
 ## Setup
 
