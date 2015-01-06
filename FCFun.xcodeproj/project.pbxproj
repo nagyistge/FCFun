@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6420A5845C2F0EC0251A77B6 /* libPods-FCFun.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BCF9405F6E15E14F53C133 /* libPods-FCFun.a */; };
+		DD6A3A071A5C332000FDCCF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6A3A061A5C332000FDCCF8 /* AppDelegate.m */; };
+		DD6A3A091A5C332000FDCCF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6A3A081A5C332000FDCCF8 /* main.m */; };
+		DD6A3A0B1A5C332000FDCCF8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD6A3A0A1A5C332000FDCCF8 /* Images.xcassets */; };
+		DD6A3A0E1A5C332000FDCCF8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD6A3A0C1A5C332000FDCCF8 /* MainMenu.xib */; };
+		DD6A693B1A5C578600B8A214 /* Role.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6A693A1A5C578600B8A214 /* Role.m */; };
+		DD6A693E1A5C58EB00B8A214 /* FFRolesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6A693D1A5C58EB00B8A214 /* FFRolesDataSource.m */; };
+		DD6A69561A5C66FC00B8A214 /* GRDatedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6A69551A5C66FC00B8A214 /* GRDatedModel.m */; };
+		DD6A69601A5C714E00B8A214 /* 0.sql in Resources */ = {isa = PBXBuildFile; fileRef = DD6A695C1A5C714E00B8A214 /* 0.sql */; };
+		DD6A69611A5C714E00B8A214 /* 1.sql in Resources */ = {isa = PBXBuildFile; fileRef = DD6A695D1A5C714E00B8A214 /* 1.sql */; };
+		DD6A69661A5C753F00B8A214 /* 2.sql in Resources */ = {isa = PBXBuildFile; fileRef = DD6A69641A5C753F00B8A214 /* 2.sql */; };
+		DD6A69671A5C753F00B8A214 /* 3.sql in Resources */ = {isa = PBXBuildFile; fileRef = DD6A69651A5C753F00B8A214 /* 3.sql */; };
+		DDF9F7BD1A5C35030024CD71 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF9F7BC1A5C35030024CD71 /* Person.m */; };
+		DDF9F7C31A5C37410024CD71 /* FFMigrator.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF9F7C21A5C37410024CD71 /* FFMigrator.m */; };
+		DDF9F7CA1A5C3BFF0024CD71 /* FFPeopleWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF9F7C81A5C3BFF0024CD71 /* FFPeopleWindowController.m */; };
+		DDF9F7CB1A5C3BFF0024CD71 /* FFPeopleWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF9F7C91A5C3BFF0024CD71 /* FFPeopleWindowController.xib */; };
+		DDF9F7CF1A5C3DF60024CD71 /* FFAddPersonWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF9F7CD1A5C3DF60024CD71 /* FFAddPersonWindowController.m */; };
+		DDF9F7D01A5C3DF60024CD71 /* FFAddPersonWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDF9F7CE1A5C3DF60024CD71 /* FFAddPersonWindowController.xib */; };
+		DDF9F7D31A5C3E2C0024CD71 /* GRProperWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF9F7D21A5C3E2C0024CD71 /* GRProperWindowController.m */; };
+		DDF9F7D71A5C46850024CD71 /* FFPeopleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DDF9F7D61A5C46850024CD71 /* FFPeopleDataSource.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		87D6FE5AEEBC7565D458ACF7 /* Pods-FCFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCFun.release.xcconfig"; path = "Pods/Target Support Files/Pods-FCFun/Pods-FCFun.release.xcconfig"; sourceTree = "<group>"; };
+		B9C035CFE02D97D3B35F40AD /* Pods-FCFun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FCFun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FCFun/Pods-FCFun.debug.xcconfig"; sourceTree = "<group>"; };
+		C4BCF9405F6E15E14F53C133 /* libPods-FCFun.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FCFun.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD6A3A001A5C332000FDCCF8 /* FCFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FCFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD6A3A041A5C332000FDCCF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD6A3A051A5C332000FDCCF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD6A3A061A5C332000FDCCF8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD6A3A081A5C332000FDCCF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD6A3A0A1A5C332000FDCCF8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DD6A3A0D1A5C332000FDCCF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DD6A69391A5C578600B8A214 /* Role.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Role.h; path = Models/Role.h; sourceTree = "<group>"; };
+		DD6A693A1A5C578600B8A214 /* Role.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Role.m; path = Models/Role.m; sourceTree = "<group>"; };
+		DD6A693C1A5C58EB00B8A214 /* FFRolesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFRolesDataSource.h; path = "Data Sources/FFRolesDataSource.h"; sourceTree = "<group>"; };
+		DD6A693D1A5C58EB00B8A214 /* FFRolesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFRolesDataSource.m; path = "Data Sources/FFRolesDataSource.m"; sourceTree = "<group>"; };
+		DD6A69541A5C66FC00B8A214 /* GRDatedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRDatedModel.h; path = Models/GRDatedModel.h; sourceTree = "<group>"; };
+		DD6A69551A5C66FC00B8A214 /* GRDatedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GRDatedModel.m; path = Models/GRDatedModel.m; sourceTree = "<group>"; };
+		DD6A695C1A5C714E00B8A214 /* 0.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 0.sql; path = Models/migrations/0.sql; sourceTree = "<group>"; };
+		DD6A695D1A5C714E00B8A214 /* 1.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 1.sql; path = Models/migrations/1.sql; sourceTree = "<group>"; };
+		DD6A69641A5C753F00B8A214 /* 2.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 2.sql; path = Models/migrations/2.sql; sourceTree = "<group>"; };
+		DD6A69651A5C753F00B8A214 /* 3.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = 3.sql; path = Models/migrations/3.sql; sourceTree = "<group>"; };
+		DDF9F7BB1A5C35030024CD71 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Models/Person.h; sourceTree = "<group>"; };
+		DDF9F7BC1A5C35030024CD71 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Models/Person.m; sourceTree = "<group>"; };
+		DDF9F7C11A5C37410024CD71 /* FFMigrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFMigrator.h; path = Models/migrations/FFMigrator.h; sourceTree = "<group>"; };
+		DDF9F7C21A5C37410024CD71 /* FFMigrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFMigrator.m; path = Models/migrations/FFMigrator.m; sourceTree = "<group>"; };
+		DDF9F7C71A5C3BFF0024CD71 /* FFPeopleWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFPeopleWindowController.h; path = Controllers/FFPeopleWindowController.h; sourceTree = "<group>"; };
+		DDF9F7C81A5C3BFF0024CD71 /* FFPeopleWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFPeopleWindowController.m; path = Controllers/FFPeopleWindowController.m; sourceTree = "<group>"; };
+		DDF9F7C91A5C3BFF0024CD71 /* FFPeopleWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FFPeopleWindowController.xib; path = Controllers/FFPeopleWindowController.xib; sourceTree = "<group>"; };
+		DDF9F7CC1A5C3DF60024CD71 /* FFAddPersonWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFAddPersonWindowController.h; path = Controllers/FFAddPersonWindowController.h; sourceTree = "<group>"; };
+		DDF9F7CD1A5C3DF60024CD71 /* FFAddPersonWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFAddPersonWindowController.m; path = Controllers/FFAddPersonWindowController.m; sourceTree = "<group>"; };
+		DDF9F7CE1A5C3DF60024CD71 /* FFAddPersonWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FFAddPersonWindowController.xib; path = Controllers/FFAddPersonWindowController.xib; sourceTree = "<group>"; };
+		DDF9F7D11A5C3E2C0024CD71 /* GRProperWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GRProperWindowController.h; path = Controllers/GRProperWindowController.h; sourceTree = "<group>"; };
+		DDF9F7D21A5C3E2C0024CD71 /* GRProperWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GRProperWindowController.m; path = Controllers/GRProperWindowController.m; sourceTree = "<group>"; };
+		DDF9F7D51A5C46850024CD71 /* FFPeopleDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FFPeopleDataSource.h; path = "Data Sources/FFPeopleDataSource.h"; sourceTree = "<group>"; };
+		DDF9F7D61A5C46850024CD71 /* FFPeopleDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FFPeopleDataSource.m; path = "Data Sources/FFPeopleDataSource.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD6A39FD1A5C332000FDCCF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6420A5845C2F0EC0251A77B6 /* libPods-FCFun.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FD64050FCC2FA058124B168 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9C035CFE02D97D3B35F40AD /* Pods-FCFun.debug.xcconfig */,
+				87D6FE5AEEBC7565D458ACF7 /* Pods-FCFun.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3BC95466DDF6F2E242352981 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4BCF9405F6E15E14F53C133 /* libPods-FCFun.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD6A39F71A5C332000FDCCF8 = {
+			isa = PBXGroup;
+			children = (
+				DD6A3A021A5C332000FDCCF8 /* FCFun */,
+				DD6A3A011A5C332000FDCCF8 /* Products */,
+				2FD64050FCC2FA058124B168 /* Pods */,
+				3BC95466DDF6F2E242352981 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DD6A3A011A5C332000FDCCF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD6A3A001A5C332000FDCCF8 /* FCFun.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD6A3A021A5C332000FDCCF8 /* FCFun */ = {
+			isa = PBXGroup;
+			children = (
+				DDF9F7D41A5C46710024CD71 /* Data Sources */,
+				DDF9F7C61A5C3BE40024CD71 /* Controllers */,
+				DDF9F7BA1A5C34F40024CD71 /* Models */,
+				DD6A3A051A5C332000FDCCF8 /* AppDelegate.h */,
+				DD6A3A061A5C332000FDCCF8 /* AppDelegate.m */,
+				DD6A3A0A1A5C332000FDCCF8 /* Images.xcassets */,
+				DD6A3A0C1A5C332000FDCCF8 /* MainMenu.xib */,
+				DD6A3A031A5C332000FDCCF8 /* Supporting Files */,
+			);
+			path = FCFun;
+			sourceTree = "<group>";
+		};
+		DD6A3A031A5C332000FDCCF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD6A3A041A5C332000FDCCF8 /* Info.plist */,
+				DD6A3A081A5C332000FDCCF8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD6A69591A5C67B900B8A214 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				DDF9F7CE1A5C3DF60024CD71 /* FFAddPersonWindowController.xib */,
+				DDF9F7C91A5C3BFF0024CD71 /* FFPeopleWindowController.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		DD6A695A1A5C67C300B8A214 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DDF9F7D11A5C3E2C0024CD71 /* GRProperWindowController.h */,
+				DDF9F7D21A5C3E2C0024CD71 /* GRProperWindowController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		DD6A695B1A5C69F400B8A214 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DD6A69541A5C66FC00B8A214 /* GRDatedModel.h */,
+				DD6A69551A5C66FC00B8A214 /* GRDatedModel.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		DDF9F7BA1A5C34F40024CD71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD6A695B1A5C69F400B8A214 /* Base */,
+				DDF9F7BE1A5C36BD0024CD71 /* Migrations */,
+				DDF9F7BB1A5C35030024CD71 /* Person.h */,
+				DDF9F7BC1A5C35030024CD71 /* Person.m */,
+				DD6A69391A5C578600B8A214 /* Role.h */,
+				DD6A693A1A5C578600B8A214 /* Role.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		DDF9F7BE1A5C36BD0024CD71 /* Migrations */ = {
+			isa = PBXGroup;
+			children = (
+				DD6A69641A5C753F00B8A214 /* 2.sql */,
+				DD6A69651A5C753F00B8A214 /* 3.sql */,
+				DD6A695C1A5C714E00B8A214 /* 0.sql */,
+				DD6A695D1A5C714E00B8A214 /* 1.sql */,
+				DDF9F7C11A5C37410024CD71 /* FFMigrator.h */,
+				DDF9F7C21A5C37410024CD71 /* FFMigrator.m */,
+			);
+			name = Migrations;
+			sourceTree = "<group>";
+		};
+		DDF9F7C61A5C3BE40024CD71 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD6A695A1A5C67C300B8A214 /* Base */,
+				DD6A69591A5C67B900B8A214 /* XIBs */,
+				DDF9F7C71A5C3BFF0024CD71 /* FFPeopleWindowController.h */,
+				DDF9F7C81A5C3BFF0024CD71 /* FFPeopleWindowController.m */,
+				DDF9F7CC1A5C3DF60024CD71 /* FFAddPersonWindowController.h */,
+				DDF9F7CD1A5C3DF60024CD71 /* FFAddPersonWindowController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DDF9F7D41A5C46710024CD71 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DDF9F7D51A5C46850024CD71 /* FFPeopleDataSource.h */,
+				DDF9F7D61A5C46850024CD71 /* FFPeopleDataSource.m */,
+				DD6A693C1A5C58EB00B8A214 /* FFRolesDataSource.h */,
+				DD6A693D1A5C58EB00B8A214 /* FFRolesDataSource.m */,
+			);
+			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD6A39FF1A5C332000FDCCF8 /* FCFun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD6A3A1D1A5C332000FDCCF8 /* Build configuration list for PBXNativeTarget "FCFun" */;
+			buildPhases = (
+				4A342E7202589CED0E8F7888 /* Check Pods Manifest.lock */,
+				DD6A39FC1A5C332000FDCCF8 /* Sources */,
+				DD6A39FD1A5C332000FDCCF8 /* Frameworks */,
+				DD6A39FE1A5C332000FDCCF8 /* Resources */,
+				3ED72786B816AAA28A91351B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FCFun;
+			productName = FCFun;
+			productReference = DD6A3A001A5C332000FDCCF8 /* FCFun.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD6A39F81A5C332000FDCCF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Guilherme Rambo";
+				TargetAttributes = {
+					DD6A39FF1A5C332000FDCCF8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = DD6A39FB1A5C332000FDCCF8 /* Build configuration list for PBXProject "FCFun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD6A39F71A5C332000FDCCF8;
+			productRefGroup = DD6A3A011A5C332000FDCCF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD6A39FF1A5C332000FDCCF8 /* FCFun */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD6A39FE1A5C332000FDCCF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD6A69611A5C714E00B8A214 /* 1.sql in Resources */,
+				DD6A69661A5C753F00B8A214 /* 2.sql in Resources */,
+				DD6A69601A5C714E00B8A214 /* 0.sql in Resources */,
+				DD6A3A0B1A5C332000FDCCF8 /* Images.xcassets in Resources */,
+				DDF9F7CB1A5C3BFF0024CD71 /* FFPeopleWindowController.xib in Resources */,
+				DD6A3A0E1A5C332000FDCCF8 /* MainMenu.xib in Resources */,
+				DD6A69671A5C753F00B8A214 /* 3.sql in Resources */,
+				DDF9F7D01A5C3DF60024CD71 /* FFAddPersonWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3ED72786B816AAA28A91351B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FCFun/Pods-FCFun-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A342E7202589CED0E8F7888 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD6A39FC1A5C332000FDCCF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF9F7C31A5C37410024CD71 /* FFMigrator.m in Sources */,
+				DDF9F7D31A5C3E2C0024CD71 /* GRProperWindowController.m in Sources */,
+				DD6A693E1A5C58EB00B8A214 /* FFRolesDataSource.m in Sources */,
+				DDF9F7BD1A5C35030024CD71 /* Person.m in Sources */,
+				DDF9F7D71A5C46850024CD71 /* FFPeopleDataSource.m in Sources */,
+				DD6A3A091A5C332000FDCCF8 /* main.m in Sources */,
+				DD6A693B1A5C578600B8A214 /* Role.m in Sources */,
+				DD6A69561A5C66FC00B8A214 /* GRDatedModel.m in Sources */,
+				DDF9F7CA1A5C3BFF0024CD71 /* FFPeopleWindowController.m in Sources */,
+				DDF9F7CF1A5C3DF60024CD71 /* FFAddPersonWindowController.m in Sources */,
+				DD6A3A071A5C332000FDCCF8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD6A3A0C1A5C332000FDCCF8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD6A3A0D1A5C332000FDCCF8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD6A3A1B1A5C332000FDCCF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DD6A3A1C1A5C332000FDCCF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DD6A3A1E1A5C332000FDCCF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9C035CFE02D97D3B35F40AD /* Pods-FCFun.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FCFun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD6A3A1F1A5C332000FDCCF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D6FE5AEEBC7565D458ACF7 /* Pods-FCFun.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FCFun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD6A39FB1A5C332000FDCCF8 /* Build configuration list for PBXProject "FCFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD6A3A1B1A5C332000FDCCF8 /* Debug */,
+				DD6A3A1C1A5C332000FDCCF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD6A3A1D1A5C332000FDCCF8 /* Build configuration list for PBXNativeTarget "FCFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD6A3A1E1A5C332000FDCCF8 /* Debug */,
+				DD6A3A1F1A5C332000FDCCF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD6A39F81A5C332000FDCCF8 /* Project object */;
+}

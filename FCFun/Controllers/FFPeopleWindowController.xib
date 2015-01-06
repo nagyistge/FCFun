@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FFPeopleWindowController">
+            <connections>
+                <outlet property="peopleDataSource" destination="dxc-56-8Ub" id="z9E-E9-KcM"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="People" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" frameAutosaveName="PeopleWindow" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" fullScreenPrimary="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView borderType="none" autohidesScrollers="YES" horizontalLineScroll="50" horizontalPageScroll="10" verticalLineScroll="50" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeQ-3D-o6q">
+                        <rect key="frame" x="-1" y="-1" width="482" height="272"/>
+                        <clipView key="contentView" id="WB7-7U-OAC">
+                            <rect key="frame" x="1" y="0.0" width="238" height="134"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="48" rowSizeStyle="automatic" viewBased="YES" id="dzz-PX-7ui">
+                                    <rect key="frame" x="0.0" y="0.0" width="238" height="134"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <size key="intercellSpacing" width="3" height="2"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                    <tableColumns>
+                                        <tableColumn width="479" minWidth="40" maxWidth="1000" id="f82-w2-Kha">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
+                                                <font key="font" metaFont="smallSystem"/>
+                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                            </tableHeaderCell>
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="jKN-VQ-YL0">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                            <prototypeCellViews>
+                                                <tableCellView identifier="person" id="9zc-3B-bCl">
+                                                    <rect key="frame" x="1" y="1" width="479" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="gSp-22-Kgm">
+                                                            <rect key="frame" x="6" y="15" width="472" height="18"/>
+                                                            <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="sZe-1z-OAJ">
+                                                                <font key="font" metaFont="system" size="15"/>
+                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                            </textFieldCell>
+                                                        </textField>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="gSp-22-Kgm" secondAttribute="trailing" constant="3" id="Epg-6F-Psn"/>
+                                                        <constraint firstAttribute="centerY" secondItem="gSp-22-Kgm" secondAttribute="centerY" id="O8C-fZ-bJi"/>
+                                                        <constraint firstItem="gSp-22-Kgm" firstAttribute="leading" secondItem="9zc-3B-bCl" secondAttribute="leading" constant="8" id="nDh-LS-NZQ"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="textField" destination="gSp-22-Kgm" id="Lm1-zU-ac1"/>
+                                                    </connections>
+                                                </tableCellView>
+                                            </prototypeCellViews>
+                                        </tableColumn>
+                                    </tableColumns>
+                                    <connections>
+                                        <outlet property="dataSource" destination="dxc-56-8Ub" id="hzs-Pp-t2s"/>
+                                        <outlet property="delegate" destination="dxc-56-8Ub" id="q2Y-mK-5Js"/>
+                                    </connections>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="hrp-Xg-MiK">
+                            <rect key="frame" x="1" y="119" width="223" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="VX8-0W-kY7">
+                            <rect key="frame" x="224" y="17" width="15" height="102"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eeQ-3D-o6q" secondAttribute="trailing" constant="-1" id="DqD-Aw-uEJ"/>
+                    <constraint firstItem="eeQ-3D-o6q" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="-1" id="LFZ-9s-2dq"/>
+                    <constraint firstAttribute="bottom" secondItem="eeQ-3D-o6q" secondAttribute="bottom" constant="-1" id="QPt-nM-HOA"/>
+                    <constraint firstItem="eeQ-3D-o6q" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="-1" id="Twa-8A-oWD"/>
+                </constraints>
+            </view>
+            <toolbar key="toolbar" implicitIdentifier="21A82BE6-BB69-4D21-8781-012925912303" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="Q9C-SO-DXB">
+                <allowedToolbarItems>
+                    <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="Cm4-y9-PLp"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="p2N-Gu-4yV"/>
+                    <toolbarItem implicitItemIdentifier="7EBD74AC-5C96-4388-A7A5-1DC5CA057E48" label="Add Person" paletteLabel="Add Person" image="NSAddTemplate" id="Dgy-kA-9bI">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="32" height="28"/>
+                        <size key="maxSize" width="32" height="59"/>
+                        <button key="view" verticalHuggingPriority="750" id="l40-kO-kDF">
+                            <rect key="frame" x="22" y="14" width="32" height="31"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSAddTemplate" imagePosition="only" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iFg-YS-O1W">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" metaFont="system"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="addPersonAction:" target="-2" id="ddd-Pc-ufO"/>
+                            </connections>
+                        </button>
+                    </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="D173FBFE-1AA6-44D7-8D38-EBEE7F28A8B5" label="Search" paletteLabel="Search" id="OxS-Ru-LQx">
+                        <nil key="toolTip"/>
+                        <size key="minSize" width="96" height="22"/>
+                        <size key="maxSize" width="128" height="22"/>
+                        <searchField key="view" wantsLayer="YES" verticalHuggingPriority="750" id="PbO-yP-6H7">
+                            <rect key="frame" x="0.0" y="14" width="128" height="22"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="Find people" usesSingleLineMode="YES" bezelStyle="round" id="v6O-QC-69z">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </searchFieldCell>
+                        </searchField>
+                    </toolbarItem>
+                </allowedToolbarItems>
+                <defaultToolbarItems>
+                    <toolbarItem reference="Dgy-kA-9bI"/>
+                    <toolbarItem reference="p2N-Gu-4yV"/>
+                    <toolbarItem reference="OxS-Ru-LQx"/>
+                </defaultToolbarItems>
+            </toolbar>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="377" y="388"/>
+        </window>
+        <customObject id="dxc-56-8Ub" customClass="FFPeopleDataSource">
+            <connections>
+                <outlet property="tableView" destination="dzz-PX-7ui" id="72P-dT-aRw"/>
+            </connections>
+        </customObject>
+    </objects>
+    <resources>
+        <image name="NSAddTemplate" width="11" height="11"/>
+    </resources>
+</document>

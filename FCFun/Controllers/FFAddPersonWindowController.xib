@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="FFAddPersonWindowController">
+            <connections>
+                <outlet property="addButton" destination="kKO-yf-mde" id="HAz-dF-itd"/>
+                <outlet property="errorLabel" destination="4YT-Fi-eKZ" id="NWr-Rf-Yx7"/>
+                <outlet property="nameField" destination="2fn-Fu-ku7" id="tIU-Lg-09e"/>
+                <outlet property="roleComboBox" destination="fuB-LU-3pt" id="IL4-hR-sno"/>
+                <outlet property="rolesDataSource" destination="GSb-A8-1og" id="hA3-QN-5Wv"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Add Person" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="alertPanel" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="798" y="494" width="340" height="142"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2fn-Fu-ku7">
+                        <rect key="frame" x="20" y="100" width="300" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Person's name" drawsBackground="YES" id="lSR-wK-73T">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kKO-yf-mde">
+                        <rect key="frame" x="260" y="13" width="66" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="q72-Sh-a3O"/>
+                        </constraints>
+                        <buttonCell key="cell" type="push" title="Add" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="j1a-3a-e2j">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="addAction:" target="-2" id="R4x-vM-s3A"/>
+                        </connections>
+                    </button>
+                    <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fuB-LU-3pt">
+                        <rect key="frame" x="20" y="68" width="303" height="26"/>
+                        <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Person's role" drawsBackground="YES" usesDataSource="YES" numberOfVisibleItems="50" id="Jvo-fa-kmc">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </comboBoxCell>
+                        <connections>
+                            <outlet property="dataSource" destination="GSb-A8-1og" id="mEI-XC-Dki"/>
+                            <outlet property="delegate" destination="GSb-A8-1og" id="KlG-aj-9Cn"/>
+                        </connections>
+                    </comboBox>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="88m-hF-ExL">
+                        <rect key="frame" x="14" y="13" width="83" height="32"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="4xM-Z6-CFs">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="performClose:" target="-1" id="F3k-n6-Jba"/>
+                        </connections>
+                    </button>
+                    <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4YT-Fi-eKZ">
+                        <rect key="frame" x="20" y="48" width="302" height="16"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Possible errors go here" id="ddw-D9-IE7">
+                            <font key="font" metaFont="cellTitle"/>
+                            <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2fn-Fu-ku7" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="9x5-Qt-yR7"/>
+                    <constraint firstAttribute="trailing" secondItem="2fn-Fu-ku7" secondAttribute="trailing" constant="20" id="Eco-5L-p0u"/>
+                    <constraint firstItem="fuB-LU-3pt" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="Jxq-Bb-5QM"/>
+                    <constraint firstAttribute="bottom" secondItem="88m-hF-ExL" secondAttribute="bottom" constant="20" id="OD0-if-jvc"/>
+                    <constraint firstAttribute="trailing" secondItem="fuB-LU-3pt" secondAttribute="trailing" constant="20" id="U86-jU-wLd"/>
+                    <constraint firstItem="88m-hF-ExL" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="UyD-Ch-BhN"/>
+                    <constraint firstItem="2fn-Fu-ku7" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="20" id="Z9d-MY-6eo"/>
+                    <constraint firstAttribute="trailing" secondItem="4YT-Fi-eKZ" secondAttribute="trailing" constant="20" id="dAC-gG-sVf"/>
+                    <constraint firstItem="88m-hF-ExL" firstAttribute="top" secondItem="4YT-Fi-eKZ" secondAttribute="bottom" constant="7" id="dpG-To-fvH"/>
+                    <constraint firstItem="kKO-yf-mde" firstAttribute="top" secondItem="4YT-Fi-eKZ" secondAttribute="bottom" constant="7" id="ea2-M4-NRn"/>
+                    <constraint firstAttribute="bottom" secondItem="kKO-yf-mde" secondAttribute="bottom" constant="20" id="fMa-6b-1MS"/>
+                    <constraint firstItem="4YT-Fi-eKZ" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="22" id="hgd-QS-olY"/>
+                    <constraint firstItem="4YT-Fi-eKZ" firstAttribute="top" secondItem="fuB-LU-3pt" secondAttribute="bottom" constant="8" id="tdm-nz-Rwu"/>
+                    <constraint firstAttribute="trailing" secondItem="kKO-yf-mde" secondAttribute="trailing" constant="20" id="tiL-Rg-uQ3"/>
+                    <constraint firstItem="fuB-LU-3pt" firstAttribute="top" secondItem="2fn-Fu-ku7" secondAttribute="bottom" constant="8" id="uab-HZ-OGI"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="430" y="312"/>
+        </window>
+        <customObject id="GSb-A8-1og" customClass="FFRolesDataSource">
+            <connections>
+                <outlet property="comboBox" destination="fuB-LU-3pt" id="bJy-lW-xYa"/>
+            </connections>
+        </customObject>
+    </objects>
+</document>
